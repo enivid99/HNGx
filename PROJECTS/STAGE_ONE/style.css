@@ -87,39 +87,3 @@ img {
     font-weight: 400;
 }
 
-@media screen and (max-width: 1023px) {
-    * {
-        font-size: 16px;
-    }
-
-    .parent-container {
-        padding: 3.125em 20px;
-    }
-
-    .parent {
-        flex-direction: column;
-        padding: 2rem;
-    }
-
-    .profile-container {
-        border-right: unset;
-        border-bottom: 1px solid #dfe3ff80;
-    }
-
-    .image-block {
-        margin-right: unset;
-    }
-
-    .profile-container h2 {
-        margin-bottom: 2rem;
-        padding-right: unset;
-    }
-
-    .text-content {
-        gap: 2rem;
-        text-align: center;
-        padding: unset;
-    }
-    
-
-}
