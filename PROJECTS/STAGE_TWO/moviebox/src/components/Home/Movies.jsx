@@ -1,5 +1,5 @@
 import { useState, useEffect} from 'react'
-import {Link} from 'react-router-dom'
+
 
 import MovieCard from './MovieCard'
 
@@ -11,11 +11,11 @@ const Movies = () => {
       method: 'GET',  
       headers: {
         accept: 'application/json',
-        Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJkZjkxZDdkODFjMTg3OGU2MDRiODY0ZmNkZjllM2UxMCIsInN1YiI6IjY1MDE4YzZlZTBjYTdmMDEyZWI5MzE0OCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.lLX98sE7njMpbF7uaDLj0TfuxC0LQ-qUFhjnRaPzunY'
+        Authorization:  `Bearer ${process.env.REACT_APP_ACCESS_TOKEN}`
       }
     };
     
-    fetch('https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc', options)
+    fetch('https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1', options)
       .then(response => response.json())
       .then(data => setMovies(data.results))
       .catch(err => console.error(err)
@@ -24,15 +24,23 @@ const Movies = () => {
   
   
   return (
-    <div>
-        <div>
-          {movies.map((movie) => (
-            <Link to={`/movie/:${movie.id}`}>
-              <MovieCard key={movie.id} movie={movie} />
-            </Link>
-          ))}
+    <>
+        <div className='moviesContainer'>
+          <div className="featuredheader">
+              <h2>Featured Movies</h2>
+              <button>
+                <p>See&nbsp;more</p>
+                <i className="fa-solid fa-chevron-right"></i>
+              </button>
+          </div>
+
+          <div className='movies'>
+            {movies.map((movie, index) => (
+                <MovieCard movie={movie} key={movie.id}/>
+            ))}
+          </div>    
         </div>
-    </div>
+    </>
   )
 }
 

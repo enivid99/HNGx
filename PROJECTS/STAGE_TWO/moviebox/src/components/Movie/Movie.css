@@ -1,0 +1,349 @@
+.movieDetailsContainer {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.movieDetailsInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* border: 1px solid black; */
+    height: 63.2rem;
+    padding: 2rem;
+    width: 100%;
+}
+
+@keyframes moveGradient {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 100% 100%;
+    }
+  }
+
+.movieDetailsVideo {
+    width: 100%;
+    height: 28.0625rem;
+    flex-shrink: 0;
+    border-radius: 1.25rem;
+    background: radial-gradient(circle at top left, #494949, #060606);
+    background-size: 300% 300%; /* Increase the size to ensure a smoother transition */
+    animation: moveGradient 4s ease-in-out infinite; /* Use ease-in-out for a smoother start and end */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.displayMessage {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-play-button {
+    width: 6.875rem;
+    height: 6.875rem;
+    flex-shrink: 0;
+    border: 1px solid rgba(255, 255, 255, 0.35);;
+    backdrop-filter: blur(5px);
+    background: #a7a7a74b;
+    cursor: pointer;
+    border-radius: 6.875rem;
+    position: absolute;
+    z-index: 1;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.custom-play-button i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.custom-play-button:hover {
+    background: #a7a7a771;
+}
+
+.titleDescription {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.titleDescription .titleContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.titleContainer div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.titleContainer .titlebuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.69rem;
+}
+
+.titleContainer .titlebuttons button {
+    flex-shrink: 0;
+    border-radius: 44.9375rem;
+    border: 1px solid #ffb9ca;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    background: #f1f1f1;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.titleContainer .titlebuttons button:hover {
+    background: #ffb9ca;
+}
+
+
+.ratings {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    /* border: 1px solid black; */
+    gap: 0.5rem;
+}
+
+
+
+.ratings h2 {
+    color: #666;
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.ratings h2 span {
+    color: #a7a7a7;
+    font-family: Poppins;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.overviewDetails {
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+}
+
+.overviewContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+
+.titletags {
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.buttontags{
+    font-family: Poppins;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.movieiconsize1 {
+    font-size: 1.5rem;
+}
+
+.movieiconsize2 {
+    font-size: 1rem;
+}
+
+.movieiconcolor1{
+    color: #FFD134;;
+}
+
+.movieiconcolor2 {
+    color: #fff;
+}
+
+.movieiconcolor3 {
+    color: #333;
+}
+
+.othersizes {
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    font-family: Poppins;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.flexcontent {
+    gap: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.colortext {
+    color: #333;
+}
+
+.colorbutton1 {
+    color: #fff;
+}
+
+.colorbutton2 {
+    color: #333;
+}
+
+.titlecontenttags {
+    color: #BE123C;
+}
+
+.showtimesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 22.5rem;
+}
+
+.showtimesbuttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.showtimesbuttons button:first-child {
+    width: 22.5rem;
+    height: 3.4375rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: #BE123C;
+    border: none;
+    cursor: pointer;
+}
+
+.showtimesbuttons button:last-child {
+    width: 22.5rem;
+    height: 3.4375rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    border: 1px solid #BE123C;
+    background: rgba(190, 18, 60, 0.10);
+    cursor: pointer;
+}
+
+.showtimesCards {
+    display: flex;
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    /* border: 1px solid black; */
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    height: 14.4rem;
+    cursor: pointer;
+}
+
+.showtimesCards .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.cardsContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 0.2rem;
+}
+
+.cardsContent div {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 8rem;
+    height: 100%;
+}
+
+
+.showtimesCards .showimesnavigate {
+    position: absolute;
+    width: 22.5rem;
+    height: 2.625rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: rgba(18, 18, 18, 0.50);
+    backdrop-filter: blur(2px);
+    top: 57.8rem;
+    border: none;
+}
+
+.movieRatingandAwards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 3.4375rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    border: 1px solid #C7C7C7;
+    background: rgba(255, 255, 255, 0.80);
+    overflow: hidden;
+    gap: 1.5rem;
+}
+
+.movieRatingandAwards button {
+    width: 15.8125rem;
+    height: 3.4375rem;
+    flex-shrink: 0;
+    border-radius: 0.625rem;
+    background: #BE123C;
+    border: none;
+}
+
+.movieRatingandAwards .navigate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 1rem;
+}
