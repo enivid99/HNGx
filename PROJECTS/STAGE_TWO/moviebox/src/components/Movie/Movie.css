@@ -134,7 +134,6 @@
 
 .ratings h2 {
     color: #666;
-    font-family: Poppins;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 500;
@@ -143,7 +142,6 @@
 
 .ratings h2 span {
     color: #a7a7a7;
-    font-family: Poppins;
     font-size: 1.5625rem;
     font-style: normal;
     font-weight: 500;
@@ -162,10 +160,7 @@
     gap: 2rem;
 }
 
-
-
 .titletags {
-    font-family: Poppins;
     font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
@@ -173,7 +168,6 @@
 }
 
 .buttontags{
-    font-family: Poppins;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 500;
@@ -202,7 +196,6 @@
 
 .othersizes {
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
-    font-family: Poppins;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 500;

@@ -51,7 +51,6 @@
     flex-shrink: 0;
     padding: 2rem;
     color: #666;
-    font-family: Poppins;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 600;
@@ -80,7 +79,6 @@
 
 .playQuiz h3 {
     color: rgba(51, 51, 51, 0.80);
-    font-family: Poppins;
     font-size: 1.1rem;
     font-style: normal;
     font-weight: 600;
@@ -89,7 +87,6 @@
 
 .playQuiz p {
     color: #666;
-    font-family: Poppins;
     font-size: 0.85rem;
     font-style: normal;
     font-weight: 500;
@@ -103,7 +100,6 @@
     border-radius: 1.875rem;
     background: rgba(190, 18, 60, 0.20);
     color: #BE123C;
-    font-family: Poppins;
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 500;
