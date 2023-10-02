@@ -134,3 +134,18 @@
     top: 0;
     background: #111827 !important;
   }
+
+  @media screen and (max-width: 768px) {
+    .navBarContainer {
+      height: 4rem;
+      width: 100%;
+      justify-content: center;
+      gap: unset;
+      padding: 2rem 2rem 0 2rem;
+      gap: 2rem;
+    }
+
+    .cta-navbar {
+      display: none;
+    }
+  }

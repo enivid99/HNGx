@@ -57,8 +57,8 @@ const Banner = ({ movieData }) => {
 
   return (
     <>
-        <div className='heroImage' style={heroImg}>
-          <div className='heroImageOverlay'>
+        <div className='heroImageOverlay' style={heroImg}>
+          <div className='heroImage'>
             <div className='leftHeroContainer'>
               <h1>
                   {movieData.title}

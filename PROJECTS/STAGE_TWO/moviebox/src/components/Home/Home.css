@@ -1,13 +1,4 @@
 .heroImage {
-    height: 45rem;
-    width: 100%;
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-    
-}
-
-.heroImageOverlay {
     display: flex;
     width: 100%;
     height: 100%;
@@ -16,8 +7,17 @@
     position: relative;
     overflow: visible;
     align-items: center;
-    justify-content: center;
-    gap: 60rem;
+    justify-content: space-between;
+    /* gap: 60rem; */
+    padding: 0 5.5rem;
+}
+
+.heroImageOverlay {
+    height: 45rem;
+    width: 100%;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .leftHeroContainer {
@@ -293,3 +293,49 @@
     color: var(--rose-700,#ff1c54);
 }
 
+
+
+@media screen and (max-width: 768px) {
+    .heroImageOverlay {
+        /* height: 35rem; */
+    }
+
+    .heroImage {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        width: 100%;
+        padding: 3rem;
+    }
+
+    .leftHeroContainer {
+        align-items: flex-start;
+        width: 100%;
+        padding-top: 6rem;
+    }
+
+    .leftHeroContainer h1 {
+        font-size: 1.87369rem;
+        line-height: 2.18594rem;
+    }
+
+    .heroRatings div {
+        font-size: 0.7rem;
+    }
+
+    .heroSubtitle {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .rightHeroContainer {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .rightHeroContainer .rightnumbers{
+        flex-direction: row;
+    }
+}
