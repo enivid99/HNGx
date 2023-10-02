@@ -263,12 +263,13 @@
     left: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
+    width: 100%;
+    padding: 1rem;
    }
 
 .circle {
     cursor: pointer;
-    margin: 15px 0 0 205px;
     width: 30px;
     height: 30px;
     border-radius: 100%;
@@ -296,10 +297,7 @@
 
 
 @media screen and (max-width: 768px) {
-    .heroImageOverlay {
-        /* height: 35rem; */
-    }
-
+    
     .heroImage {
         flex-direction: column;
         justify-content: center;
@@ -355,5 +353,29 @@
 
     .movieCardContent {
         width: 10rem;
+    }
+
+    .favouriteIconContainer {
+        width: 100%;
+    }
+
+    .circle {
+        padding: 0.5rem;
+    }
+
+    .movieReleaseDate {
+        font-size: 0.6rem;
+    }
+
+    .movieTitle {
+        font-size: 1rem;
+    }
+
+    .movieRating p {
+        font-size: 0.6rem;
+    }
+
+    .moviegenres {
+        font-size: xx-small;
     }
 }

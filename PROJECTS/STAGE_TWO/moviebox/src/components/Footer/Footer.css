@@ -4,7 +4,7 @@
     align-items: center;
     /* border: 1px solid black; */
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     margin: auto;
     gap: 1rem;
     padding: 0rem 0 4rem 0;
@@ -55,4 +55,41 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+
+@media screen and (max-width: 768px) {
+    .footerContainer {
+        padding: 2.5rem;
+        justify-content: flex-start;
+        gap: 0.9rem;
+    }
+
+    .socialIcons {
+        justify-content: flex-start;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .socialIcons .icons {
+        font-size: 1.5rem;
+    }
+
+    .footerLinks {
+        width: 100%;
+        gap: 0.5rem;
+        flex-direction: column;
+    }
+
+    .footerLinks a {
+        font-size: 1rem;
+    }
+
+    .tradeMark {
+        width: 100%;
+    }
+
+    .tradeMark p {
+        font-size: 1rem;
+    }
 }
