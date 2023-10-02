@@ -33,7 +33,6 @@
 
 .leftHeroContainer h1 {
     color: #FFF;
-    font-family: DM Sans;
     font-size: 3rem;
     font-style: normal;
     font-weight: 700;
@@ -53,7 +52,6 @@
     gap: 1rem;
     align-items: center;
     color: #FFF;
-    font-family: DM Sans;
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 400;
@@ -149,7 +147,6 @@
 
 .featuredheader h2{
     color: #000;
-    font-family: DM Sans;
     font-size: 2.25rem;
     font-style: normal;
     font-weight: 700;
@@ -163,7 +160,6 @@
     background: none;
     border: none;
     color: var(--rose-700, #BE123C);
-    font-family: DM Sans;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
@@ -297,7 +293,7 @@
 
 
 @media screen and (max-width: 768px) {
-    
+
     .heroImage {
         flex-direction: column;
         justify-content: center;
