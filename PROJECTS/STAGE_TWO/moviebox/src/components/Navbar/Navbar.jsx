@@ -96,7 +96,7 @@ const Navbar = ({ isSearchPage }) => {
         </button>
       </form>
       <div className="cta-navbar">
-        <NavLink to="/sign">Sign in</NavLink>
+        <NavLink to="/sign">Sign&nbsp;in</NavLink>
         <svg
           width="36"
           height="36"

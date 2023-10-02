@@ -143,6 +143,7 @@
     width: 100%;
     margin-bottom: 44px;
     padding: 0 27.875px;
+    align-items: center;
 }
 
 .featuredheader h2{
@@ -387,5 +388,21 @@
 
     .moviegenres {
         font-size: xx-small;
+    }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1025px) { 
+    .movies {
+        justify-content: space-between;
+    }
+
+    .movieCard {
+        padding: 0 0.9rem 0 0.9rem;
+        margin: 0 0 70px 0;
+    }
+
+    .featuredheader {
+        padding: 0 9.875px;
     }
 }

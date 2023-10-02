@@ -56,3 +56,20 @@
     justify-content: space-between;
     margin: auto;
 }
+
+@media screen and (max-width: 768px) { 
+
+    .container {
+        padding: 7rem 1rem;
+    }
+
+    .searchResults {
+        justify-content: space-evenly;
+    }
+
+    .searchRedirect button{
+        font-size: 1rem;
+    }
+
+
+}

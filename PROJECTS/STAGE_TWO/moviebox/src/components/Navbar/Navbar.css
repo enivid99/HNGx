@@ -152,4 +152,22 @@
     .cta-navbar {
       display: none;
     }
+
+    .searchNavBar {
+      padding: 2rem 2rem 2rem 2rem
+    }
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1027px) {
+    .navBarContainer {
+      gap: 2rem;
+      justify-content: space-evenly;
+      padding: 1rem 2rem;
+    }
+
+    .cta-navbar {
+      gap: 1rem;
+    }
+  }
+    
+ 

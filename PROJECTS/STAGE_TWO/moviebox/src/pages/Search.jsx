@@ -37,7 +37,7 @@ const Search = () => {
           <h2>Search Results for '{`${query}`}'</h2>
           <Link className="searchRedirect" to="/">
             <button className="searchRedirectBtn">
-              <span>Back Home</span>
+              <span>Back&nbsp;Home</span>
               <i className="searchRedirectBtnIcon fa-solid fa-chevron-right"></i>
             </button>
           </Link>
