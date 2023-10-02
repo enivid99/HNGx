@@ -145,6 +145,10 @@
       gap: 2rem;
     }
 
+    .navBarContainer.fixed {
+      width: 100%;
+    }
+
     .cta-navbar {
       display: none;
     }
