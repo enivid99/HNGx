@@ -74,12 +74,10 @@ const Movie = () => {
     // Example: iframe.contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
   };
 
-  // Loading effect while fetching data
   if (loading) {
     return <p>Loading...</p>;
   }
-
-  // Render content after loading
+  
   return (
     <div>
       <div className='movieDetailsContainer'>

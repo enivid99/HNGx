@@ -49,7 +49,7 @@ const Search = () => {
             )}
           {noResult && <h2 className="noresult">No Movie found</h2>}
         </div>
-      </div>
+      </div>    
       <Footer />
     </div>
   );
