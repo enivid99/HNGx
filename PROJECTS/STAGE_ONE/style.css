@@ -48,8 +48,6 @@ body {
     border-radius: 1rem;
     overflow: hidden;
     position: relative;
-    width: 30rem;
-    height: 30rem;
 }
 
 .overlay {
@@ -97,9 +95,6 @@ img {
     object-position: center;
     cursor: pointer;
     position: relative;
-    right: 80px;
-    width: 60rem;
-    height: 40rem;
     z-index: 1;
 }
 
